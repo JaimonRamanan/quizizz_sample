@@ -17,25 +17,26 @@ class _QuizResultPageState extends State<QuizResultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF6A1B9A),
-      body:  Column(mainAxisAlignment: MainAxisAlignment.center
-          children: [
-            Text(
-              'You Get',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-              ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Text(
+            'You Get',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
             ),
-            SizedBox(
-              height: 20.0,
-            ),
-            ScoreSection(
-              totalScore: widget.totalScore,
-              userScore: widget.userScore,
-            ),
-          ],
-        
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          ScoreSection(
+            totalScore: widget.totalScore,
+            userScore: widget.userScore,
+          ),
+        ],
       ),
     );
   }
