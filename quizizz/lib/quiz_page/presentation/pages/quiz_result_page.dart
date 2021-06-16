@@ -17,8 +17,7 @@ class _QuizResultPageState extends State<QuizResultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF6A1B9A),
-      body: Center(
-        child: Column(
+      body:  Column(mainAxisAlignment: MainAxisAlignment.center
           children: [
             Text(
               'You Get',
@@ -36,7 +35,7 @@ class _QuizResultPageState extends State<QuizResultPage> {
               userScore: widget.userScore,
             ),
           ],
-        ),
+        
       ),
     );
   }
